@@ -186,7 +186,7 @@ article:nth-child(2) {
   color: #44686F;
 }
 
-/* section {
+section {
 padding: 1em;
 width: 45%;
 flex-direction: row;
@@ -194,7 +194,7 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 margin-bottom: 5em;
-} */
+}
 
 p {
   margin: auto;
@@ -256,6 +256,24 @@ aside {
   text-align: center;
   width: 200px;
   padding: 0.5em;
+}
+
+.article-content:hover {
+  color: var(--blue-300);
+  text-decoration: underline;
+  box-shadow: 10px 5px 5px red;
+}
+
+.information {
+  border-radius: 50%;
+  width: 1.5em;
+  background-color: var(--groen-100);
+  font-size: var(--body-small);
+}
+
+.information:hover {
+  background-color: var(--blue-100);
+  
 }
 
 .article-content>p {
