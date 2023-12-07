@@ -16,6 +16,7 @@
   --blue-100: #3D5066;
   --blue-200: #25364B;
   --blue-300: #213247;
+  --blue-400: #7faec5;
 
   /* font-sizes */
   --font-heading: 'Raleway', sans-serif;
@@ -261,19 +262,36 @@ aside {
 .article-content:hover {
   color: var(--blue-300);
   text-decoration: underline;
-  box-shadow: 10px 5px 5px red;
+  box-shadow: 10px 5px 5px var(--gray-300);
 }
 
-.information {
+button {
   border-radius: 50%;
   width: 1.5em;
-  background-color: var(--groen-100);
+  background-color: var(--blue-400);
   font-size: var(--body-small);
 }
 
-.information:hover {
+button:hover {
   background-color: var(--blue-100);
   
+}
+
+div {
+  opacity: 0;
+  transition: 2s;
+}
+
+div.article-content-expanded {
+  background-color: #AEDBAB;
+  border-radius: 25px;
+  translate: -330px 110px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  padding: 0.5em;
+  opacity: 1;
+
 }
 
 .article-content>p {
