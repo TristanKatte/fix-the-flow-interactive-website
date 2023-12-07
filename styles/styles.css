@@ -278,7 +278,7 @@ button:hover {
 }
 
 div {
-  opacity: 0;
+
   transition: 2s;
 }
 
@@ -290,7 +290,7 @@ div.article-content-expanded {
   width: 400px;
   height: 400px;
   padding: 0.5em;
-  opacity: 1;
+  
 
 }
 
