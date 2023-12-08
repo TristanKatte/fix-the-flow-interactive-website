@@ -290,8 +290,14 @@ div.article-content-expanded {
   width: 400px;
   height: 400px;
   padding: 0.5em;
-  
+}
 
+div.info {
+  display: none; 
+}
+
+div.show{
+  display: block;
 }
 
 .article-content>p {
