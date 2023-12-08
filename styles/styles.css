@@ -256,13 +256,14 @@ aside {
   translate: -330px 110px;
   text-align: center;
   width: 200px;
-  padding: 0.5em;
+  padding: 1.5em;
 }
 
 .article-content:hover {
   color: var(--blue-300);
-  text-decoration: underline;
+  text-decoration: none;
   box-shadow: 10px 5px 5px var(--gray-300);
+  
 }
 
 button {
@@ -286,10 +287,10 @@ div.article-content-expanded {
   background-color: #AEDBAB;
   border-radius: 25px;
   translate: -330px 110px;
-  text-align: center;
+  text-align: left;
   width: 400px;
   height: 400px;
-  padding: 0.5em;
+  padding: var(--spacing-xs);
 }
 
 div.info {
