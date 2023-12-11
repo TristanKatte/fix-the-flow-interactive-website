@@ -270,7 +270,7 @@ button {
   border-radius: 50%;
   width: 1.5em;
   background-color: var(--blue-400);
-  font-size: var(--body-small);
+  font-size: var(--body-large);
 }
 
 button:hover {
@@ -289,12 +289,13 @@ div.article-content-expanded {
   translate: -330px 110px;
   text-align: left;
   width: 400px;
-  height: 400px;
+  height: 450px;
   padding: var(--spacing-xs);
 }
 
 div.info {
   display: none; 
+  
 }
 
 div.show{
