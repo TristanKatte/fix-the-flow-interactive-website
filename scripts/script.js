@@ -1,6 +1,6 @@
-var button = document.querySelector("button");
-var element = document.querySelector("div.article-content");
-var info = document.querySelector("div.info");
+const button = document.querySelector("button");
+const element = document.querySelector("div.article-content");
+const info = document.querySelector("div.info");
 
 function showcontent(){
     info.classList.toggle("show");
