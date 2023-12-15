@@ -253,7 +253,7 @@ aside {
 .article-content {
   background-color: #AEDBAB;
   border-radius: 25px;
-  /* translate: -330px 110px; */
+  translate: -330px 110px;
   text-align: center;
   width: 200px;
   padding: 1.5em;
@@ -286,7 +286,7 @@ div {
 div.article-content-expanded {
   background-color: #AEDBAB;
   border-radius: 25px;
-  /* translate: -330px 110px; */
+  translate: -330px 110px;
   text-align: left;
   width: 400px;
   height: 450px;
@@ -624,7 +624,7 @@ footer {
   .article-content {
     background-color: #AEDBAB;
     border-radius: 25px;
-    translate: -10px -50px;
+    translate: 10px -50px;
     text-align: center;
     width: 200px;
     padding: 0.5em;
