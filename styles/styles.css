@@ -189,7 +189,7 @@ article:nth-child(2) {
 
 section {
 padding: 1em;
-width: 45%;
+width: 75vw;
 flex-direction: row;
 justify-content: center;
 align-items: center;
@@ -205,15 +205,15 @@ p {
 
 figure {
   border-radius: 25px 250px 250px 250px;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   margin-top: 1.5em;
 }
 
 figure img {
   border-radius: 2em;
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 
 aside {
