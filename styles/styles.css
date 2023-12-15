@@ -253,7 +253,7 @@ aside {
 .article-content {
   background-color: #AEDBAB;
   border-radius: 25px;
-  translate: -330px 110px;
+  /* translate: -330px 110px; */
   text-align: center;
   width: 200px;
   padding: 1.5em;
