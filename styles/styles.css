@@ -286,7 +286,7 @@ div {
 div.article-content-expanded {
   background-color: #AEDBAB;
   border-radius: 25px;
-  translate: -330px 110px;
+  /* translate: -330px 110px; */
   text-align: left;
   width: 400px;
   height: 450px;
