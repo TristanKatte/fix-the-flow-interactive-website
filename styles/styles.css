@@ -124,8 +124,8 @@ li a {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/vallende-regen.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,6 +142,35 @@ li a {
   color: white;
   font-size: var(--hero-text);
   font-family: "Gabarito", cursive;
+}
+
+.rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.drop {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  background-color: #fff;
+  animation: rain-fall 1s linear infinite;
+}
+
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
 }
 
 h2,
@@ -177,7 +206,7 @@ article {
   align-items: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 100vw;
   margin: auto;
   padding: 1.8em;
 }
@@ -188,13 +217,18 @@ article:nth-child(2) {
 }
 
 section {
-padding: 1em;
-width: 75vw;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-margin-bottom: 5em;
+  line-height: 2;
+  background-color: #fff;
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60vw;
+  margin: auto;
+  padding: 1.8em;
+  flex: 1;
 }
 
 p {
@@ -211,9 +245,10 @@ figure {
 }
 
 figure img {
-  border-radius: 2em;
+  border-radius: 25px 250px 250px 250px;
   width: 400px;
   height: 400px;
+  margin-top: 1.5em;
 }
 
 aside {
@@ -529,7 +564,7 @@ footer {
   }
 
   main {
-    max-width: 100%;
+    max-width: 100vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -549,6 +584,7 @@ footer {
     flex-wrap: nowrap;
     margin: var(--spacing-xl);
     padding: 1.4em;
+    
   }
 
   article:nth-child(2) {
@@ -560,7 +596,7 @@ footer {
 
   section {
     padding: 1em;
-    width: 100%;
+    width: 50vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
