@@ -184,7 +184,7 @@ h5 {
   font-family: "Gabarito", cursive;
   font-style: bold;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 
@@ -201,9 +201,7 @@ article {
   align-items: center;
 }
 
-article:nth-child(2) {
-  color: #44686F;
-}
+
 
 section {
   padding: 1em;
@@ -268,12 +266,15 @@ aside {
   font-size: 1.2em;
   padding: 1em;
   text-align: left;
+  box-shadow: none;
 }
 
 .article-grid img {
   border-radius: 25px;
   width: 360px;
   flex-direction: row;
+  
+
 }
 
 .article-content {
@@ -336,12 +337,14 @@ div.show{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   background-color: #AEDBAB;
+  box-shadow: none;
+  margin: 0 auto;
 }
 
 .snippet {
-  border-radius: 25px 250px 250px 250px;
+  border-radius: 5em;
   width: 300px;
   height: 300px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -415,7 +418,9 @@ input[type=submit]:hover {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
+  box-shadow: none;
+  margin: 0 auto;
 }
 
 footer {
