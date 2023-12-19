@@ -17,6 +17,8 @@
   --blue-200: #25364B;
   --blue-300: #213247;
   --blue-400: #7faec5;
+  --blue-500: #44686f;
+  --blue-600: #384b61;
 
   /* font-sizes */
   --font-heading: 'Raleway', sans-serif;
@@ -57,6 +59,7 @@ html {
   padding: 0;
   height: 100%;
   width: 100vw;
+  scroll-behavior: smooth;
 
 }
 
@@ -181,50 +184,40 @@ h5 {
   font-family: "Gabarito", cursive;
   font-style: bold;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-main {
-  width: 100vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-}
 
 article {
   line-height: 2;
   background-color: #fff;
   padding: 1.5em; 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: nowrap;
   margin: 0 auto;
   padding: 1.8em;
-  width: 85em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 article:nth-child(2) {
-  background-color: #AEDBAB;
   color: #44686F;
 }
 
 section {
   padding: 1em;
-  width: 30em;
+  width: 50%;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 5em;
+  border-radius: 1em;
+  background-color: #fafafa;
+  color: var(--blue-500);
+  box-shadow: 5px 5px 5px 0px rgba(51,51,51,1);
+
 }
 
 p {
@@ -238,13 +231,15 @@ figure {
   width: 400px;
   height: 400px;
   margin-top: 1.5em;
+  
 }
 
 figure img {
   border-radius: 25px 250px 250px 250px;
-  width: 400px;
   height: 400px;
+  width: 400px;
   margin-top: 1.5em;
+ 
 }
 
 aside {
