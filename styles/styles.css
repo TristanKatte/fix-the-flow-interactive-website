@@ -185,6 +185,7 @@ h5 {
   font-style: bold;
   display: flex;
   justify-content: center;
+  
 }
 
 
@@ -294,10 +295,10 @@ aside {
 }
 
 button {
-  border-radius: 50%;
-  width: 1.5em;
+  border-radius: 50px;
   background-color: var(--blue-400);
-  font-size: var(--body-large);
+  font-size: 1em;
+  cursor: pointer;
 }
 
 button:hover {
