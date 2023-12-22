@@ -24,6 +24,7 @@
   --font-heading: 'Raleway', sans-serif;
   --font-body: 'Work Sans', sans-serif;
   --hero-text: 8em;
+  --hero-text-mobile: 3em;
   --heading-xl: 1.6rem;
   --heading-large: 1.5rem;
   --heading-small: 1rem;
@@ -105,7 +106,7 @@ li a {
 
 
 .topnav a {
-  color: var(--blue-400);
+  color: var(--primair-wit);
   text-decoration: none;
 }
 
@@ -123,9 +124,14 @@ li a {
   color: black;
 }
 
-.active:hover {
+/* .active:hover {
   background-color: #0989c9;
   color: #fff;
+} */
+
+.active {
+  background-color: var(--groen-200);
+  color: var(--blue-400);
 }
 
 .hero-image {
@@ -468,6 +474,8 @@ footer {
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: var(--groen-500);
+    scroll-behavior: smooth;
   }
 
   nav {
@@ -549,8 +557,8 @@ footer {
 
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../assets/vallende-regen.jpg");
-    height: 50%;
+      url("../assets/cloud-background.jpg");
+    height: 80%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -561,11 +569,11 @@ footer {
   .hero-text {
     text-align: left;
     position: absolute;
-    top: 25%;
+    top: 35%;
     right: 10%;
     transform: translate(10%, 200px);
     color: white;
-    font-size: var(--hero-text);
+    font-size: var(--hero-text-mobile);
     font-family: var(--font-heading);
 
   }
@@ -596,11 +604,11 @@ footer {
 
   article {
     line-height: 2;
-    background-color: #fff;
+    background-color: var(--groen-500);
     padding: 1.5em;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     margin: var(--spacing-xl);
@@ -616,8 +624,8 @@ footer {
   }
 
   section {
-    padding: 1em;
-    width: 50vw;
+    padding: 1.5em;
+    width: 85vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -643,14 +651,16 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1.2em;
     background-color: var(--blue-100);
     color: var(--primair-wit);
-    width: 100%;
+    width: 85vw;
     border-radius: 2em;
     line-height: var(--space-between);
     margin: 0 auto;
-    margin-top: var(--spacing-xl);
+  }
+
+  aside img {
+    margin: 0 auto;
   }
 
   .app {
@@ -758,7 +768,7 @@ footer {
 
   input[type=submit] {
     width: 100%;
-    background-color: #7faec5;
+    background-color: var(--groen-300);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -768,14 +778,14 @@ footer {
   }
 
   input[type=submit]:hover {
-    background-color: #44686f;
+    background-color: var(--groen-200);
   }
 
   .example-form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
   }
