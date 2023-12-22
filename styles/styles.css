@@ -23,7 +23,7 @@
   /* font-sizes */
   --font-heading: 'Raleway', sans-serif;
   --font-body: 'Work Sans', sans-serif;
-  --hero-text: 3em;
+  --hero-text: 8em;
   --heading-xl: 1.6rem;
   --heading-large: 1.5rem;
   --heading-small: 1rem;
@@ -60,6 +60,7 @@ html {
   height: 100%;
   width: 100vw;
   scroll-behavior: smooth;
+  
 
 }
 
@@ -94,7 +95,7 @@ li a {
 
 .topnav {
   overflow: hidden;
-  background-color: #ececec;
+  background-color: var(--blue-600);
   position: relative;
   position: fixed;
   top: 0;
@@ -104,7 +105,7 @@ li a {
 
 
 .topnav a {
-  color: #7faec5;
+  color: var(--blue-400);
   text-decoration: none;
 }
 
@@ -128,8 +129,7 @@ li a {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/cloud-background.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,8 +140,8 @@ li a {
 .hero-text {
   text-align: left;
   position: absolute;
-  top: 55%;
-  right: 0%;
+  top: 45%;
+  right: 15%;
   transform: translate(-10%, -0%);
   color: white;
   font-size: var(--hero-text);
@@ -185,6 +185,7 @@ h5 {
   font-style: bold;
   display: flex;
   justify-content: center;
+  color: var(--gray-100);
   
 }
 
@@ -192,7 +193,7 @@ h5 {
 
 article {
   line-height: 2;
-  background-color: #fff;
+  background-color: var(--groen-500);
   padding: 1.5em; 
   margin: 0 auto;
   padding: 1.8em;
@@ -205,7 +206,7 @@ article {
 
 
 section {
-  padding: 1em;
+  padding: 1.9em;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -213,7 +214,7 @@ section {
   align-items: center;
   margin-bottom: 5em;
   border-radius: 1em;
-  background-color: #fafafa;
+  background-color: var(--blue-400);
   color: var(--blue-500);
   box-shadow: 5px 5px 5px 0px rgba(51,51,51,1);
 
@@ -249,7 +250,7 @@ aside {
   align-items: center;
   flex-wrap: wrap;
   padding: 1.2em;
-  background-color: var(--blue-100);
+  background-color: var(--blue-400);
   color: var(--primair-wit);
   border-radius: 2em;
   line-height: var(--space-between);
@@ -268,6 +269,8 @@ aside {
   padding: 1em;
   text-align: left;
   box-shadow: none;
+  
+  
 }
 
 .article-grid img {
@@ -421,7 +424,7 @@ textarea {
 
 input[type=submit] {
   width: 100%;
-  background-color: #7faec5;
+  background-color: var(--groen-300);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -431,7 +434,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #44686f;
+  background-color: var(--groen-200);
 }
 
 .example-form {
